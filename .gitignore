@@ -1,0 +1,4 @@
+# Streamlit and local environment files
+.streamlit/secrets.toml
+.DS_Store
+.env
