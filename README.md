@@ -32,7 +32,10 @@ A simple yet powerful **Generative AI** app that summarizes any text or document
 
 ---
 
+# Smart Text Summarizer
+
 ## 📦 Project Structure
-=======
-# smart-text-summarizer
->>>>>>> origin/main
+- app.py
+- requirements.txt
+- README.md
+- /assets (optional preview images)
