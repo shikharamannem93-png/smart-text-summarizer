@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧠 Smart Text Summarizer
 
 A simple yet powerful **Generative AI** app that summarizes any text or document using **OpenAI GPT-4o-mini** — built with **Streamlit** and deployed on **Hugging Face Spaces**.
@@ -32,3 +33,6 @@ A simple yet powerful **Generative AI** app that summarizes any text or document
 ---
 
 ## 📦 Project Structure
+=======
+# smart-text-summarizer
+>>>>>>> origin/main
