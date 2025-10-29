@@ -1,4 +1,18 @@
-# Streamlit and local environment files
-.streamlit/secrets.toml
-.DS_Store
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
 .env
+
+# VSCode / macOS
+.vscode/
+.DS_Store
+
+# Streamlit
+.streamlit/
+
+# Cache / logs
+logs/
+*.log
