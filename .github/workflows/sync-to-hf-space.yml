@@ -1,27 +1,23 @@
-name: Sync to 🤗 Space
+name: 🚀 Sync to Hugging Face Space
+
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches: [main]     # Auto-trigger on push to main
+  workflow_dispatch:      # Allow manual trigger from Actions tab
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Optional: guardrail for big files (Spaces require LFS for >10MB)
-      - name: Check for large files
-        run: |
-          set -e
-          if git ls-files | xargs -I{} bash -lc '[ -f "{}" ] && [ $(stat -c%s "{}" 2>/dev/null || stat -f%z "{}") -gt 10000000 ] && echo "::warning file={}::File >10MB. Use Git LFS." || true'
-
-      - name: Sync to Hugging Face Hub (Space)
+      - name: Sync to 🤗 Hugging Face Space
         uses: nateraw/huggingface-sync-action@v0.0.5
         with:
           github_repo_id: ${{ github.repository }}
-          huggingface_repo_id: your-hf-username/your-space-name
+          huggingface_repo_id: shikhara93/smart-text-summarizer
           repo_type: space
-          space_sdk: streamlit   # or gradio / static / docker as appropriate
+          space_sdk: streamlit        # or gradio / static / docker if you’re using something else
           hf_token: ${{ secrets.HF_TOKEN }}
