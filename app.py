@@ -103,7 +103,7 @@ with gr.Blocks() as demo:
 
     # Sliders for parameters
     with gr.Row():
-        max_len = gr.Slider(32, 256, value=120, step=1, label="Max length")
+        max_len = gr.Slider(32, 8000, value=120, step=1, label="Max length")
         min_len = gr.Slider(8, 128, value=30, step=1, label="Min length")
 
     # Summarize button directly after input
