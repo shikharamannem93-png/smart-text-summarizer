@@ -108,11 +108,12 @@ with gr.Blocks() as demo:
         max_len = gr.Slider(32, 256, value=120, step=1, label="Max length")
         min_len = gr.Slider(8, 128, value=30, step=1, label="Min length")
 
+    # Button logic
+    btn.click(summarize, [inp, max_len, min_len], out)
+
     # Output section
     out = gr.Textbox(label="Summary", lines=8)
 
-    # Button logic
-    btn.click(summarize, [inp, max_len, min_len], out)
 
 if __name__ == "__main__":
     demo.launch()
