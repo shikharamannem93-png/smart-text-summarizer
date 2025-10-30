@@ -1,0 +1,27 @@
+name: Sync to 🤗 Space
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Optional: guardrail for big files (Spaces require LFS for >10MB)
+      - name: Check for large files
+        run: |
+          set -e
+          if git ls-files | xargs -I{} bash -lc '[ -f "{}" ] && [ $(stat -c%s "{}" 2>/dev/null || stat -f%z "{}") -gt 10000000 ] && echo "::warning file={}::File >10MB. Use Git LFS." || true'
+
+      - name: Sync to Hugging Face Hub (Space)
+        uses: nateraw/huggingface-sync-action@v0.0.5
+        with:
+          github_repo_id: ${{ github.repository }}
+          huggingface_repo_id: your-hf-username/your-space-name
+          repo_type: space
+          space_sdk: streamlit   # or gradio / static / docker as appropriate
+          hf_token: ${{ secrets.HF_TOKEN }}
