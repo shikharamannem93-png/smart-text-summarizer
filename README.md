@@ -6,7 +6,7 @@ A simple yet powerful **Generative AI** app that summarizes any text or document
 ---
 
 ## 🚀 Demo
-👉 [Open Live Demo](https://huggingface.co/spaces/yourusername/smart-text-summarizer)
+👉 [Open Live Demo](https://huggingface.co/spaces/shikhara93/smart-text-summarizer)
 
 ![App Preview](./preview.png)
 
