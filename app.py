@@ -100,20 +100,20 @@ with gr.Blocks() as demo:
     # Input section
     inp = gr.Textbox(label="Input Text", lines=12, placeholder="Paste text here...")
 
-    # Summarize button directly after input
-    btn = gr.Button("✨ Summarize")
 
     # Sliders for parameters
     with gr.Row():
         max_len = gr.Slider(32, 256, value=120, step=1, label="Max length")
         min_len = gr.Slider(8, 128, value=30, step=1, label="Min length")
 
+    # Summarize button directly after input
+    btn = gr.Button("✨ Summarize")
+
     # Button logic
     btn.click(summarize, [inp, max_len, min_len], out)
 
     # Output section
     out = gr.Textbox(label="Summary", lines=8)
-
 
 if __name__ == "__main__":
     demo.launch()
