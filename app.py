@@ -3,6 +3,10 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 
+import gradio as gr
+from transformers import pipeline
+
+
 st.set_page_config(page_title="Smart Summarizer", page_icon="🧠")
 st.title("🧠 Smart Text Summarizer")
 
@@ -80,3 +84,26 @@ if run_btn:
             st.write(summary)
         except Exception as e:
             st.exception(e)
+
+
+summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+
+def summarize(text, max_len, min_len):
+    if not text.strip():
+        return ""
+    out = summarizer(text, max_length=max_len, min_length=min_len, do_sample=False)
+    return out[0]["summary_text"]
+
+with gr.Blocks() as demo:
+    gr.Markdown("# 🧠 Smart Text Summarizer")
+    with gr.Row():
+        inp = gr.Textbox(label="Input Text", lines=12, placeholder="Paste text here...")
+    with gr.Row():
+        max_len = gr.Slider(32, 256, value=120, step=1, label="Max length")
+        min_len = gr.Slider(8, 128, value=30, step=1, label="Min length")
+    out = gr.Textbox(label="Summary", lines=8)
+    btn = gr.Button("Summarize")
+    btn.click(summarize, [inp, max_len, min_len], out)
+
+if __name__ == "__main__":
+    demo.launch()
