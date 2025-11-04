@@ -5,3 +5,9 @@ transformers
 torch
 sentencepiece
 gradio
+langchain
+chromadb
+tiktoken
+pdfminer.six
+beautifulsoup4
+requests
