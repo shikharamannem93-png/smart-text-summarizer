@@ -1,0 +1,7 @@
+Title: AP Top Extended Financial Headlines at 4:58 a.m. EDT
+Source: Yahoo
+Date: 1761883200
+
+Summary: a href="https://www.yahoo.com/organizations/apple/" data-autolinker-wiki-id="Apple_Inc." data-original-link= >Apple delivered financial results during its summertime quarter that exceeded analyst projections, despite being caught in the crosshairs of a global trade war at the same time the trendsetting company is scrambling to catch up to its Big Tech peers in the artificial intelligence race
+
+URL: https://finnhub.io/api/news?id=3dd39035dfd1d76f18bc4af4cacea2a7b0bf95d4e6c53d1fdc30d33b9f9d31e1

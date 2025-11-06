@@ -1,0 +1,7 @@
+Title: Stock market today: Nasdaq leads S&P 500, Dow lower as Meta sinks after earnings with Apple, Amazon on deck
+Source: Yahoo
+Date: 1761854512
+
+Summary: Wall Street eyed a US-China truce agreed by Trump and Xi, cooling hopes for a December rate cut and the next batch of Big Tech earnings.
+
+URL: https://finnhub.io/api/news?id=95d235350cc4b68e62eb3099b53da9fc7026382d621d4ffe7af66c98859f714f

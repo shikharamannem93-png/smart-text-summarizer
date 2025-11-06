@@ -1,0 +1,7 @@
+Title: Stock Market Today: Dow Jones Index Wavers; Nvidia Rallies On Price Target Hike (Live Coverage)
+Source: Yahoo
+Date: 1762177966
+
+Summary: Stock Market Today: The Dow Jones index wavered Monday morning. Nvidia stock rallied on a price-target hike.
+
+URL: https://finnhub.io/api/news?id=9e16ab632e4e2563361476ba81fc98d293803fcab9876738b5a9515f6ff3c69a

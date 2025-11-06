@@ -1,0 +1,7 @@
+Title: Stock Market Today: Dow Rises On Amazon, Apple Earnings; Nvidia, Palantir Rebound (Live Coverage)
+Source: Yahoo
+Date: 1761913908
+
+Summary: Stock Market Today: The Dow Jones index rose Friday as Amazon and Apple rallied on strong earnings results.
+
+URL: https://finnhub.io/api/news?id=6e7ee8cdd255ba12118e1eff9bd8b353748b8ed41a201ef5967b96fa9191bf82

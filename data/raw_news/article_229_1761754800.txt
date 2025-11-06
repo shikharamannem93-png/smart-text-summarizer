@@ -1,0 +1,7 @@
+Title: Nvidia is proof hyperscalers won't back off AI capex: Analyst
+Source: Yahoo
+Date: 1761754800
+
+Summary: Nvidia's market cap crossed above $5 trillion on Wednesday morning, becoming the first company in history to reach such a valuation. This all comes after Nvidia CEO Jensen Huang delivered his keynote address at the GTC 2025 event (GPU Technology Conference) on Tuesday, showcasing the AI chipmaker's newest projects and partnerships. Intelligent Alpha Founder and CEO Doug Clinton chats with Julie Hyman on Nvidia's growth, how the semiconductor manufacturer is "leading the charge" in AI infrastructure capex, and what he expects from other Big Tech giants' ramp up in AI spending. To watch more expert insights and analysis on the latest market action, check out more Market Catalysts.
+
+URL: https://finnhub.io/api/news?id=01f3e56f05ad27dfad2fde9e1a33ebe07a351559fdf7026d7587ebecd0f2f2d3

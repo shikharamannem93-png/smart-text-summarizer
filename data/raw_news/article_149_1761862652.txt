@@ -1,0 +1,7 @@
+Title: Apple Stock Rises on First-Quarter Outlook
+Source: Yahoo
+Date: 1761862652
+
+Summary: Apple shares, which initially fell on earnings news late Thursday, reversed course in late trading as investors learned more about its recent quarter and the one currently underway. Shares were up 3.2% from the close, to $280.
+
+URL: https://finnhub.io/api/news?id=f7c9e1fb8f9bd17593c189d4b3bc599a9658b7deee71593c6929c0f2bf4f6e23

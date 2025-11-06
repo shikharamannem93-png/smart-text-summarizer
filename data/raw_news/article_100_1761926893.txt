@@ -1,0 +1,7 @@
+Title: Earnings Roundup: Apple, Coinbase, Reddit
+Source: Yahoo
+Date: 1761926893
+
+Summary: ↗️ Amazon (AMZN): The e-commerce company reported faster-than-expected growth in AI-related revenue and detailed aggressive plans to grow data-center capacity. Shares soared 11% Friday morning. ? Apple (AAPL): The company logged record sales and said it expects a big December quarter, as customers race to upgrade to the iPhone 17.
+
+URL: https://finnhub.io/api/news?id=6e8821dc17203c77cbdf5454fe9c2ab4efdceb80b1b89670d43bc59c0b9872ed

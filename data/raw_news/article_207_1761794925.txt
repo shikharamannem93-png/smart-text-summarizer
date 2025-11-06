@@ -1,0 +1,7 @@
+Title: BofA raises target price for Apple
+Source: Finnhub
+Date: 1761794925
+
+Summary: Bank of America announced on Wednesday that it had raised its target price for Apple shares from $270 to $320, believing that the tech giant is well positioned to generate sustained growth over the...
+
+URL: https://finnhub.io/api/news?id=a729f5fa84f29e8aa09f7d0f2af18df80f2ad0a855d7e5119aa4eb2d63f4c584

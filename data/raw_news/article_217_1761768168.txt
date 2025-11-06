@@ -1,0 +1,7 @@
+Title: Stock market today: Nasdaq clinches record, Dow, S&P 500 dip as Fed cuts rates, Powell downplays December cut
+Source: Yahoo
+Date: 1761768168
+
+Summary: Investors are looking to the Fed policy decision for insight into the path of interest rates.
+
+URL: https://finnhub.io/api/news?id=50156792b4846487d0a55ee93490152204b1957cf9279a6c6d63d39514fe02a2

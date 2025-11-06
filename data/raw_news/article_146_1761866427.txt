@@ -1,0 +1,7 @@
+Title: Stock market today: S&P 500, Nasdaq futures rebound after Apple, Amazon earnings rekindle optimism
+Source: Yahoo
+Date: 1761866427
+
+Summary: US stocks have seen volatile moves in the last handful of trading sessions, as strong earnings and massive AI spending pull investors in different directions.
+
+URL: https://finnhub.io/api/news?id=cc957e9c6199a4b7c71a01803f1b02717b2d8f0a82258a37152f2320852d7d39

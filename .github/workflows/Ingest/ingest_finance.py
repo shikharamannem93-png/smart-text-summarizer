@@ -10,11 +10,24 @@ import json
 from typing import List
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings
 from langchain_community.document_loaders import TextLoader, UnstructuredHTMLLoader
 from langchain_community.document_loaders import PyPDFLoader  # requires pypdf or pdfminer backend
 
 from langchain_community.vectorstores import Chroma
+import importlib
+import subprocess
+import sys
+#!/usr/bin/env python3
+
+from pathlib import Path
+from pathlib import Path
+from typing import List
+import logging
+
+from langchain_core.documents import Document
+from langchain_community.vectorstores import Chroma
+# Use the community huggingface embeddings wrapper
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
 # Config
 CHUNK_SIZE = 1000
@@ -48,38 +61,125 @@ def load_documents_from_folder(source_folder: str):
             print(f"Failed to load {f}: {e}")
     return docs
 
-def chunk_and_index(docs, persist_directory=PERSIST_DIR, collection_name="finance_docs"):
-    print(f"Splitting into chunks (size={CHUNK_SIZE}, overlap={CHUNK_OVERLAP}) ...")
-    splitter = RecursiveCharacterTextSplitter(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
-    chunked_docs = []
-    for d in docs:
-        chunks = splitter.split_documents([d])
-        chunked_docs.extend(chunks)
+# ingest_finance.py (relevant parts)
 
-    print(f"Total chunks: {len(chunked_docs)}")
-    # Initialize embeddings + chroma
-    emb = OpenAIEmbeddings()
-    vectordb = Chroma.from_documents(
-        documents=chunked_docs,
-        embedding=emb,
-        collection_name=collection_name,
-        persist_directory=persist_directory,
-    )
-    vectordb.persist()
-    print("Indexing complete and persisted to", persist_directory)
+
+logger = logging.getLogger(__name__)
+
+def chunk_and_index(documents: List[Document], persist_dir: str, collection_name: str = "finance"):
+    """
+    documents: list of LangChain Document objects (with .page_content and .metadata)
+    persist_dir: where Chroma will persist its DB
+    collection_name: optional collection name
+    """
+
+    # 1) create the embedding function using a local huggingface model
+    #    'all-MiniLM-L6-v2' is small and fast for development.
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+
+    # 2) optionally split/prepare documents here (example uses documents already split)
+    # If you need splitting, use your splitter:
+    # text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+    # docs = []
+    # for d in documents:
+    #     chunks = text_splitter.split_text(d.page_content)
+    #     for i, c in enumerate(chunks):
+    #         docs.append(Document(page_content=c, metadata={**d.metadata, "chunk": i}))
+
+    docs = documents  # or use the prepared/ split docs variable above
+
+    # 3) create/Add to Chroma vectorstore using the HF embeddings
+    try:
+        vectordb = Chroma.from_documents(
+            documents=docs,
+            embedding=embeddings,            # pass huggingface embeddings object
+            persist_directory=str(persist_dir),
+            collection_name=collection_name
+        )
+        # Persist to disk (if using persistent chroma)
+        try:
+            vectordb.persist()
+        except Exception:
+            # some chroma versions call persist on the underlying client
+            logger.debug("Chroma persist() call failed or not needed for this version.")
+        logger.info(f"Indexed {len(docs)} documents into Chroma at {persist_dir}/{collection_name}")
+        return vectordb
+    except Exception as e:
+        logger.exception("Failed to create vector DB with HuggingFace embeddings.")
+        raise
+
+def try_run_fetch_script(fetch_script: str, outdir: Path) -> bool:
+    """
+    Try to import and call a sensible function from the fetch script (preferred).
+    If import fails, fallback to running the script as a subprocess.
+    Returns True if any fetch attempt was performed, False otherwise.
+    """
+    mod_name = Path(fetch_script).stem
+
+    # Try import & call (preferred, keeps it in-process)
+    try:
+        mod = importlib.import_module(mod_name)
+        for fn in ("fetch_and_save", "fetch_and_write", "fetch_news", "fetch_articles", "main", "run"):
+            if hasattr(mod, fn):
+                func = getattr(mod, fn)
+                try:
+                    # prefer supplying output directory if the function accepts it
+                    func(str(outdir))
+                except TypeError:
+                    func()
+                return True
+    except Exception:
+        # Import failed or function raised; fall back to subprocess below
+        pass
+
+    # Fallback: run script as a subprocess and pass an --out/--outdir argument
+    cmd = [sys.executable, fetch_script, "--out", str(outdir)]
+    try:
+        subprocess.run(cmd, check=True)
+        return True
+    except FileNotFoundError:
+        print(f"Fetch script not found: {fetch_script}")
+    except subprocess.CalledProcessError as e:
+        print(f"Fetch script failed (exit {e.returncode}): {e}")
+    except Exception as e:
+        print(f"Unexpected error while running fetch script: {e}")
+
+    return False
+
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--source", required=True, help="Folder with raw documents")
+    parser = argparse.ArgumentParser(description="Ingest raw news into Chroma index.")
+    parser.add_argument("--source", default="data/raw_news", help="Source folder containing documents to ingest")
     parser.add_argument("--collection", default="finance_docs", help="Chroma collection name")
+    parser.add_argument("--fetch-script", default="fetch_news_finnhub.py",
+                        help="Fetcher script to run/import (only used when --fetch is set)")
+    parser.add_argument("--fetch", action="store_true", help="If set, run the fetch script before ingesting")
     args = parser.parse_args()
 
-    docs = load_documents_from_folder(args.source)
+    outdir = Path(args.source)
+    outdir.mkdir(parents=True, exist_ok=True)
+
+    if args.fetch:
+        print(f"Running fetch script: {args.fetch_script} -> {outdir}")
+        did_fetch = try_run_fetch_script(args.fetch_script, outdir)
+        if not did_fetch:
+            print("Warning: fetch attempt failed or was not performed. Continuing with whatever is in the source folder.")
+
+    # Load documents from the folder (you already have this helper)
+    docs = load_documents_from_folder(str(outdir))  # ensure this function is imported above
     if not docs:
-        print("No documents found in", args.source)
+        print("No documents found in", outdir)
         return
-    chunk_and_index(docs, collection_name=args.collection)
+
+    # index into chroma (ensure chunk_and_index is imported above)
+
+    chunk_and_index(
+    docs,
+    persist_dir="data/chroma_index",     # ✅ specify where to store your vector DB
+    collection_name=args.collection
+)
     print("Done.")
+
 
 if __name__ == "__main__":
     main()

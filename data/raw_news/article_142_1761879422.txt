@@ -1,0 +1,7 @@
+Title: Dow Jones Futures: Amazon, Apple Earnings Lift Techs After Meta-Led Market Slide
+Source: Yahoo
+Date: 1761879422
+
+Summary: Tech futures rose on Amazon, Apple and other earnings winners late after Meta led stocks lower Thursday.
+
+URL: https://finnhub.io/api/news?id=92ca71c16142719d643ba3b24e0075f74b2b189365503dcd0b08a7e9af1f13dd

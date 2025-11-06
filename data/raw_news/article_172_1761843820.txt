@@ -1,0 +1,7 @@
+Title: Stock market today: Dow rises, Nasdaq slides as Meta sinks after earnings with Apple, Amazon ahead
+Source: Yahoo
+Date: 1761843820
+
+Summary: Wall Street eyed a US-China truce agreed by Trump and Xi, cooling hopes for a December rate cut and the next batch of Big Tech earnings.
+
+URL: https://finnhub.io/api/news?id=961ee345b0eb0aa551612c9e04704c3d206f6ace0b4677cb085baf75c4ea5d7d

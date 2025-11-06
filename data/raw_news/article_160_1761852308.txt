@@ -1,0 +1,7 @@
+Title: Apple Closes In On An All-Time High
+Source: Yahoo
+Date: 1761852308
+
+Summary: With 40 minutes left before the closing bell, Apple shares were trading at $271.37, up 0.6% on the day, which would be a new all-time closing high for the iPhone maker. The stock is up nine out of the last 10 days, and up 6.
+
+URL: https://finnhub.io/api/news?id=f34003de58c86b2047514b22cca0343d5560d0ff325f18ae8f9bae8fff985c0d

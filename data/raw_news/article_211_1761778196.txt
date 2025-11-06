@@ -1,0 +1,7 @@
+Title: Stock market today: Dow, S&P 500, Nasdaq futures fall following Trump-Xi meeting, mixed Big Tech earning
+Source: Yahoo
+Date: 1761778196
+
+Summary: Wall Street digested a wave of Big Tech earnings alongside the Federal Reserve’s latest interest rate move, while waiting for President Trump's long-awaited summit with Chinese leader Xi Jinping.
+
+URL: https://finnhub.io/api/news?id=06274ea343b9ebca47ca7a41a2548a3f7ca9848810d93f3e08f461a1d99ef036

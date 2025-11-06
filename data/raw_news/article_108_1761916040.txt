@@ -1,0 +1,7 @@
+Title: Amazon surges, Apple earnings, Chevron & Exxon: 3 Things
+Source: Yahoo
+Date: 1761916040
+
+Summary: US stock futures (ES=F, NQ=F, YM=F) are rising in Friday's pre-market trading, after a busy earnings week from Big Tech. Amazon (AMZN) shares are seeing gains of over 13% this morning after outpacing third quarter earnings and revenue estimates, bolstered by growth in its AWS (Amazon Web Services) cloud business. Apple (AAPL) stock is getting a slight lift as it forecasts strong holiday sales, as the iPhone maker also blew past Wall Street expectations for its fiscal fourth quarter. Exxon Mobil (XOM) stock ticks lower while Chevron's (CVX) moves higher after the oil producers reported their respective quarterly results. To watch more expert insights and analysis on the latest market action, check out more Morning Brief.
+
+URL: https://finnhub.io/api/news?id=92ffb91edcb38893aa8540041d8225cbcc58c0eae00f87f8896ba0d0747097c1

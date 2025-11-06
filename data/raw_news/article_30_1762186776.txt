@@ -1,0 +1,7 @@
+Title: Stock Market Today: Dow Skids While Amazon Surges On OpenAI Move; Kimberly-Clark Dives (Live Coverage)
+Source: Yahoo
+Date: 1762186776
+
+Summary: Stock Market Today: The Dow Jones index slips Monday. Amazon stock soars on deal with OpenAI. Kimberly-Clark plunges.
+
+URL: https://finnhub.io/api/news?id=27481f2548933f9a054cfe66dba5afc7a9f7d8508a1b8be47665dd7e339e11dd

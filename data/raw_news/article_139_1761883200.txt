@@ -1,0 +1,7 @@
+Title: AP Top Financial News at 4:58 a.m. EDT
+Source: Yahoo
+Date: 1761883200
+
+Summary: a href="https://www.yahoo.com/organizations/apple/" data-autolinker-wiki-id="Apple_Inc." data-original-link= >Apple delivers strong quarter despite trade war challenges and ongoing artificial technology issues
+
+URL: https://finnhub.io/api/news?id=4c407b7d05a963a6f21f634c894166eb5ff437c088f751d7fa055503f089e6f8

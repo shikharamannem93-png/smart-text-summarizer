@@ -1,0 +1,7 @@
+Title: Nvidia's Market Cap Tops $5 Trillion
+Source: Yahoo
+Date: 1761746555
+
+Summary: Nvidia is the world's most valuable publicly traded company --and the size of a country in itself.  Nvidia, at its current share price of over $210, is valued at $5.12 trillion.  Germany is expected to have a nominal GDP closer to Nvidia at $5.01 trillion.
+
+URL: https://finnhub.io/api/news?id=b33e09d69bf6d051bb26f8a772a0b776a4298ff78dcea3a7f24831a9f3f9976b

@@ -1,0 +1,7 @@
+Title: Consumer Discretionary Lifts US Equity Indexes in Midday Trading
+Source: Yahoo
+Date: 1761926882
+
+Summary: US equity indexes rose Friday after a rally in Amazon (AMZN) shares boosted the consumer discretiona
+
+URL: https://finnhub.io/api/news?id=c20125abcccaa314257b27449d1669bdc1af7a96a55db2756c7b22258ee8bd4e

@@ -1,0 +1,7 @@
+Title: US-China trade truce, Alphabet earnings, Fed rate cut: 3 Things
+Source: Yahoo
+Date: 1761829729
+
+Summary: US stock futures (ES=F, NQ=F, YM=F) are moving lower in Thursday's pre-market trading after President Trump met with Chinese President Xi Jinping in South Korea, where the two leaders agreed to a one-year trade truce. While Alphabet (GOOG, GOOGL) shares gain after reporting its quarterly results on Wednesday, Meta Platforms (META) stock sinks lower and Microsoft (MSFT) dips lower on their respective earnings releases. Apple (AAPL) and Amazon (AMZN) are due to report their earnings results after Thursday's market close. After the Federal Reserve cut interest rates by another 25 basis points at its October FOMC meeting on Wednesday, Fed Chair Jerome Powell remains cautious about the certainty of another rate cut in December due to the lack of economic data amid the US government shutdown. To watch more expert insights and analysis on the latest market action, check out more Morning Brief.
+
+URL: https://finnhub.io/api/news?id=5c85c0e19470f691a034c16401911c61dc88d2544128cf5d1846a6cc11ac2f53

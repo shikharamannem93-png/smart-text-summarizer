@@ -1,0 +1,7 @@
+Title: Sector Update: Tech Stocks Advance Pre-Bell Friday
+Source: Yahoo
+Date: 1761916208
+
+Summary: Technology stocks were advancing pre-bell Friday, with the Technology Select Sector SPDR Fund (XLK)
+
+URL: https://finnhub.io/api/news?id=39384e7c97ab6babf8796396e3d103c21b9c341d6c70553d959d6c863cf32ad4

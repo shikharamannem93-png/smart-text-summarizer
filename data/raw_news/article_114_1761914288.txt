@@ -1,0 +1,7 @@
+Title: This Week In Cloud AI - Cloud Powers ADS Sectors Transforming Data Management and Security
+Source: Yahoo
+Date: 1761914288
+
+Summary: The aerospace, defense, and security (ADS) sectors are increasingly leveraging cloud computing to enhance data management and integrate emerging technologies like AI and IoT. A recent report highlights the crucial role of cloud computing in addressing data siloes and improving interoperability, which is fundamental for dealing with geopolitical threats. By providing scalable IT infrastructure and on-demand computational power, cloud platforms support Big Data, AI, and IoT applications,...
+
+URL: https://finnhub.io/api/news?id=8d8a2be1e656962a8602ec5e3bdbf327dc8ec96ffce8fb602335ef05876c5660

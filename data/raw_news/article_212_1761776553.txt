@@ -1,0 +1,7 @@
+Title: Skyworks CEO sees chance to save power in AI-driven phones with Qorvo deal
+Source: Yahoo
+Date: 1761776553
+
+Summary: WASHINGTON (Reuters) -Skyworks Solutions CEO Phil Brace sees a path toward chips that would help smartphones have faster wireless data connections while consuming less power by combining his firm's technologies with those from smaller Qorvo, he told Reuters in an interview on Wednesday.  Skyworks on Tuesday announced a cash and stock offer to buy the smaller Qorvo that values Qorvo at $9.76 billion.  While the two firms do have some areas of competition, Brace said the challenge both face is the fast-growing amount of data that has to be processed on phones and shuffled back and forth between phones and data centers to power AI applications such as chatbots.
+
+URL: https://finnhub.io/api/news?id=cf5ba55a98f7ff475e6fa93ae9f49c94788fd6c39b69feb0d5de595eb7a67015

@@ -1,0 +1,7 @@
+Title: Nvidia partners with South Korean government, companies to boost AI development
+Source: Yahoo
+Date: 1761891508
+
+Summary: Silicon Valley chipmaker Nvidia plans to supply hundreds of thousands of its graphics processing units for projects with South Korean businesses and the government to advance the country’s artificial intelligence infrastructure and technologies.  The plan was announced Friday by the government, Nvidia, and some of South Korea’s biggest companies, including chipmakers Samsung Electronics, SK Hynix and auto giant Hyundai Motor, after President Lee Jae Myung met with Nvidia CEO Jensen Huang.
+
+URL: https://finnhub.io/api/news?id=e6e4c86d897764bf6e3353a2a435c384cad78d331d1ae99bd748ade553c047ce

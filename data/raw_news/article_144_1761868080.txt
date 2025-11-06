@@ -1,0 +1,7 @@
+Title: Apple and Amazon defy expectations with latest results
+Source: Yahoo
+Date: 1761868080
+
+Summary: Tech giants Apple and Amazon have defied industry predictions with better-than-expected financial results.  Apple's success is largely thanks to record-breaking iPhone sales, while Amazon's is down to cloud computing arm Amazon Web Services (AWS), in spite of last week's outage which knocked out thousands of websites.  AWS revenue accelerated 20.2% to $33bn (almost £25bn), which CEO Andy Jassy said was a pace it hadn't seen since 2022.
+
+URL: https://finnhub.io/api/news?id=2a9661056ce9f26c16efdc6dcf494da6644191763b47d2bd1ee15580f764c99c

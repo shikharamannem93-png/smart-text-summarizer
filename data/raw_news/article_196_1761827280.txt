@@ -1,0 +1,7 @@
+Title: These Stocks Are Moving the Most Today: Microsoft, Alphabet, Meta, Nvidia, Lilly, Chipotle, Carvana, FMC, Roblox, and More
+Source: Yahoo
+Date: 1761827280
+
+Summary: Stock futures traded mixed Thursday as investors tried to make sense of Big Tech earnings, the latest move on interest rates from the Federal Reserve, and as President Donald Trump said the U.S. would reduce tariffs on China immediately and Beijing agreed to defer its plan to tighten export controls on rare-earth materials for a year.  The software company and the second-most valuable U.S. corporation, which finished Wednesday with a market cap of $4.025 trillion, reported fiscal first-quarter adjusted earnings of $4.13 a share, better than Wall Street consensus of $3.67.  Revenue was $77.7 billion, ahead of analysts’ expectations of $75.4 billion, while Azure revenue rose by 40%, higher than forecasts of 38% growth.
+
+URL: https://finnhub.io/api/news?id=145677692f29faeb588316d7322a37d1484b718dabc990711f07e44aecd7bb7f

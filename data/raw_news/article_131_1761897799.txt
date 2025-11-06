@@ -1,0 +1,7 @@
+Title: Asia markets diverge on heels of Apple, Amazon earnings
+Source: Yahoo
+Date: 1761897799
+
+Summary: Asian stock markets presented a mixed bag on Friday, with falls in China and gains in Japan and South Korea coming after better-than-expected earnings reports from US tech behemoths Apple and Amazon.Amazon also reported earnings that were better than expected, driven by surging demand for its cloud computing services.
+
+URL: https://finnhub.io/api/news?id=53ae76723f2b86acbc5af4298cc78f7996e577fab816972e1bbbaa3c2113241c

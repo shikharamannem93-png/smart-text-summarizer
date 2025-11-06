@@ -1,0 +1,7 @@
+Title: CDW beats quarterly profit estimates on strong demand for its IT solutions
+Source: Yahoo
+Date: 1762263373
+
+Summary: IT solutions provider CDW beat Wall Street estimates for third-quarter profit on Tuesday, as enterprise customers increased tech budgets and embraced artificial intelligence cloud adoption. Growing demand for AI-related cloud and infrastructure to support intensive computing has boosted the need for CDW's IT solutions, which include hardware, software and services for sectors like healthcare, government and education. CDW's chief financial officer, Albert Miralles, said strong performance in services and cloud was a key driver of growth and margins in the quarter.
+
+URL: https://finnhub.io/api/news?id=d2c24c5cfed9fbddff9f60320db35b27aecb167abed888d49e4d7a28ddae9734
